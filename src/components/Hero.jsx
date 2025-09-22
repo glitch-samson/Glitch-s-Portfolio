@@ -50,9 +50,13 @@ const Hero = () => {
           {/* Profile Initials */}
           <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="relative inline-block">
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-accent-700 to-accent-500 p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200">
-                {personal.name.split(' ').map(n => n[0]).join('')}
-              </div>
+              {personal.photo ? (
+                <img src={personal.photo} alt={personal.name} className="w-full h-full rounded-full object-cover" />
+              ) : (
+                <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200">
+                  {personal.name.split(' ').map(n => n[0]).join('')}
+                </div>
+              )}
               <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 ring-3d-a rounded-full"></div>
                 <div className="absolute inset-0 ring-3d-b rounded-full"></div>
