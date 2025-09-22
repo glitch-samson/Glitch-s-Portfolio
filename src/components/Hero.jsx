@@ -13,8 +13,21 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-gray-900">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-10 -left-10 w-72 h-72 bg-accent-200/40 dark:bg-accent-900/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 -right-10 w-96 h-96 bg-accent-300/30 dark:bg-accent-900/20 rounded-full blur-3xl"></div>
+        <motion.div
+          className="absolute -top-10 -left-10 w-72 h-72 bg-accent-200/50 dark:bg-accent-900/20 rounded-full blur-3xl"
+          animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute bottom-10 -right-10 w-96 h-96 bg-accent-300/40 dark:bg-accent-900/20 rounded-full blur-3xl"
+          animate={{ y: [0, 20, 0], rotate: [0, -8, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.div
+          className="absolute top-1/3 left-1/4 w-24 h-24 bg-accent-400/30 rounded-xl blur-[10px]"
+          animate={{ x: [0, 30, -10, 0], y: [0, -10, 10, 0], rotate: [0, 15, -10, 0] }}
+          transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+        />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
