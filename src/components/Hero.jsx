@@ -1,6 +1,7 @@
 import { ArrowDown } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import { motion } from 'framer-motion';
+import { useParallaxTilt } from '../hooks/useParallaxTilt';
 
 const Hero = () => {
   const { personal } = portfolioData;
@@ -9,8 +10,9 @@ const Hero = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const tilt = useParallaxTilt({ maxTilt: 10, scale: 1.02, shine: false });
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-gray-900">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-gray-900 perspective-1000">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -38,13 +40,22 @@ const Hero = () => {
             hidden: { opacity: 0 },
             show: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="space-y-8"
+          ref={tilt.ref}
+          onMouseMove={tilt.onMouseMove}
+          onMouseLeave={tilt.onMouseLeave}
+          style={tilt.style}
+          whileHover={{ z: 30 }}
+          className="space-y-8 preserve-3d"
         >
           {/* Profile Initials */}
           <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }} className="relative inline-block">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-accent-700 to-accent-500 p-1 shadow-2xl">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-accent-700 to-accent-500 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200">
                 {personal.name.split(' ').map(n => n[0]).join('')}
+              </div>
+              <div className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 ring-3d-a rounded-full"></div>
+                <div className="absolute inset-0 ring-3d-b rounded-full"></div>
               </div>
             </div>
           </motion.div>
