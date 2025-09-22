@@ -1,5 +1,6 @@
 import { ExternalLink, Github, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   const { projects } = portfolioData;
@@ -7,9 +8,9 @@ const Projects = () => {
   const getStatusIcon = (status) => {
     switch (status) {
       case 'Completed':
-        return <CheckCircle className="h-4 w-4 text-green-500" />;
+        return <CheckCircle className="h-4 w-4 text-green-600" />;
       case 'In Development':
-        return <Clock className="h-4 w-4 text-yellow-500" />;
+        return <Clock className="h-4 w-4 text-yellow-600" />;
       default:
         return <AlertCircle className="h-4 w-4 text-gray-500" />;
     }
@@ -31,17 +32,24 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Featured <span className="bg-gradient-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="bg-gradient-to-r from-accent-700 to-accent-500 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             A showcase of my recent work and the technologies I've used to bring ideas to life
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-100px' }}
+          variants={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.12 } } }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } }}
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700 group hover:scale-105"
             >
               {/* Image */}
@@ -96,7 +104,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-md font-medium"
+                      className="px-2 py-1 bg-accent-100 dark:bg-accent-900/30 text-accent-800 dark:text-accent-300 text-xs rounded-md font-medium"
                     >
                       {tech}
                     </span>
@@ -114,7 +122,7 @@ const Projects = () => {
                         key={featureIndex}
                         className="flex items-start text-sm text-gray-600 dark:text-gray-400"
                       >
-                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
+                        <div className="w-1.5 h-1.5 bg-accent-600 rounded-full mt-2 mr-2 flex-shrink-0"></div>
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -127,7 +135,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-emerald-500 text-white rounded-lg font-medium text-center hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
+                    className="flex-1 px-4 py-2 bg-accent-700 hover:bg-accent-800 text-white rounded-lg font-medium text-center hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
                   >
                     <ExternalLink className="h-4 w-4" />
                     <span>Live Demo</span>
@@ -142,17 +150,17 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* View More */}
         <div className="text-center mt-12">
           <a
-            href="https://github.com/johndoe"
+            href="https://github.com/glitch-samson"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200 dark:border-gray-700 space-x-2"
+            className="inline-flex items-center px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200 dark:border-gray-700 space-x-2"
           >
             <Github className="h-5 w-5" />
             <span>View More Projects on GitHub</span>
