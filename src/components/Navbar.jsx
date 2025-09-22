@@ -22,6 +22,7 @@ const Navbar = () => {
     { href: '#experience', label: 'Experience', icon: Briefcase },
     { href: '#education', label: 'Education', icon: GraduationCap },
     { href: '#skills', label: 'Skills', icon: Code },
+    { href: '#soft-skills', label: 'Soft Skills', icon: User },
     { href: '#projects', label: 'Projects', icon: FolderOpen },
     { href: '#contact', label: 'Contact', icon: Mail },
   ];
