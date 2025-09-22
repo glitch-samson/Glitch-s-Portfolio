@@ -123,5 +123,16 @@ export const portfolioData = {
     Languages: ["JavaScript", "HTML5", "CSS3"],
     Frameworks: ["React", "Next.js", "Tailwind CSS"],
     Tools: ["Git & GitHub", "Webpack", "CI/CD", "NPM & PNPM"]
-  }
+  },
+  softSkills: [
+    "Communication",
+    "Leadership",
+    "Teamwork",
+    "Problem-solving",
+    "Mentoring",
+    "Adaptability",
+    "Time management",
+    "Empathy",
+    "Humor under pressure"
+  ]
 };
