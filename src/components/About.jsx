@@ -51,6 +51,9 @@ const About = () => {
                 </a>
               </div>
             </div>
+            <motion.div key={quoteIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="p-4 rounded-xl bg-accent-50 dark:bg-gray-800 border border-accent-100 dark:border-gray-700">
+              <p className="text-gray-700 dark:text-gray-300 italic">“{quotes[quoteIndex]}”</p>
+            </motion.div>
           </motion.div>
 
           {/* Visual */}
