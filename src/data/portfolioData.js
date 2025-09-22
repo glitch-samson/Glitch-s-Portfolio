@@ -65,7 +65,7 @@ export const portfolioData = {
     {
       title: "Tutor Match",
       description: "Tutor–student matching platform enabling seamless discovery, booking, and collaboration.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2F2e57cf6fd0144961ac971e4739b916b4?format=webp&width=800",
       technologies: ["React", "Tailwind", "Firebase"],
       features: [
         "Real-time tutor availability",
@@ -79,7 +79,7 @@ export const portfolioData = {
     {
       title: "Neyma",
       description: "Modern e-commerce web app with smooth browsing and checkout experiences.",
-      image: "https://images.pexels.com/photos/4464484/pexels-photo-4464484.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2F387278d742f445c881d5110bedfc5314?format=webp&width=800",
       technologies: ["Next.js", "Tailwind", "Stripe"],
       features: [
         "Product search and filtering",
@@ -93,7 +93,7 @@ export const portfolioData = {
     {
       title: "TicketDorm",
       description: "Digital ticketing solution for events with QR validation and analytics.",
-      image: "https://images.pexels.com/photos/7991372/pexels-photo-7991372.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2F7692c8cad76f4fc69c1517759e7a3e82?format=webp&width=800",
       technologies: ["React", "Tailwind", "Node.js"],
       features: [
         "E-ticket generation and scanning",
@@ -107,7 +107,7 @@ export const portfolioData = {
     {
       title: "BolaCash",
       description: "Financial services web app with wallet, transfers, and bill payments.",
-      image: "https://images.pexels.com/photos/4968636/pexels-photo-4968636.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2Fc6a9e0d296d543debd6505e6187913b4?format=webp&width=800",
       technologies: ["React", "Tailwind", "REST APIs"],
       features: [
         "Wallet top-up and transfers",
