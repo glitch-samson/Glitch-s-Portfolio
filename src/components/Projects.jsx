@@ -1,6 +1,7 @@
 import { ExternalLink, Github, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import { motion } from 'framer-motion';
+import { useParallaxTilt } from '../hooks/useParallaxTilt';
 
 const Projects = () => {
   const { projects } = portfolioData;
@@ -46,14 +47,22 @@ const Projects = () => {
           variants={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.12 } } }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {projects.map((project, index) => (
+          {projects.map((project, index) => {
+            const tilt = useParallaxTilt({ maxTilt: 14, scale: 1.03 });
+            return (
             <motion.div
               key={index}
               variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } }}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700 group hover:scale-105"
+              onMouseMove={tilt.onMouseMove}
+              onMouseLeave={tilt.onMouseLeave}
+              ref={tilt.ref}
+              style={tilt.style}
+              whileHover={{ z: 20 }}
+              className="perspective-1000 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700 group"
             >
               {/* Image */}
               <div className="relative overflow-hidden">
+                <div className="shine-overlay absolute inset-0" style={tilt.shineStyle}></div>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -151,7 +160,8 @@ const Projects = () => {
                 </div>
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </motion.div>
 
         {/* View More */}
