@@ -20,6 +20,10 @@
 }
 
 @layer utilities {
+  .perspective-1000 { perspective: 1000px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .card-3d { transform: translateZ(20px); }
+  .shine-overlay { pointer-events: none; mix-blend-mode: screen; }
   .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -46,11 +50,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-blue-500 to-emerald-500 rounded-full;
+  @apply bg-gradient-to-b from-accent-700 to-accent-500 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply from-blue-600 to-emerald-600;
+  @apply from-accent-800 to-accent-600;
 }
 
 /* Smooth transitions for dark mode */
@@ -126,10 +130,41 @@ button:focus,
 a:focus,
 input:focus,
 textarea:focus {
-  @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
+  @apply outline-none ring-2 ring-accent-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
 }
 
 /* Selection color */
 ::selection {
-  @apply bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-100;
+  @apply bg-accent-100 dark:bg-accent-900/40 text-gray-900 dark:text-accent-100;
+}
+
+/* 3D Rings */
+.ring-3d-a { border: 2px solid rgba(59,130,246,0.35); filter: blur(0.3px); animation: ringA 18s linear infinite; transform: rotateX(65deg) rotateZ(0deg) translateZ(-40px); }
+.ring-3d-b { border: 2px solid rgba(59,130,246,0.2); filter: blur(0.3px); animation: ringB 22s linear infinite; transform: rotateY(65deg) rotateZ(0deg) translateZ(-60px); }
+@keyframes ringA { from { transform: rotateX(65deg) rotateZ(0deg) translateZ(-40px);} to { transform: rotateX(65deg) rotateZ(360deg) translateZ(-40px);} }
+@keyframes ringB { from { transform: rotateY(65deg) rotateZ(0deg) translateZ(-60px);} to { transform: rotateY(65deg) rotateZ(360deg) translateZ(-60px);} }
+
+/* Ripple effect */
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+.ripple {
+  position: absolute;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  animation: ripple 600ms linear;
+  background: rgba(166, 104, 61, 0.35);
+}
+@keyframes ripple {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0.7;
+  }
+  to {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
 }

@@ -1,134 +1,138 @@
 export const portfolioData = {
   personal: {
-    name: "John Doe",
-    title: "Full Stack Developer",
-    email: "john.doe@email.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, CA",
-    website: "https://johndoe.dev",
-    linkedin: "https://linkedin.com/in/johndoe",
-    github: "https://github.com/johndoe",
-    bio: "Passionate full-stack developer with 5+ years of experience building scalable web applications. Specialized in React, Node.js, and cloud technologies with a focus on creating exceptional user experiences."
-  },
-  skills: {
-    technical: [
-      { name: "JavaScript", level: 95, category: "Frontend" },
-      { name: "TypeScript", level: 90, category: "Frontend" },
-      { name: "React", level: 95, category: "Frontend" },
-      { name: "Vue.js", level: 85, category: "Frontend" },
-      { name: "Node.js", level: 90, category: "Backend" },
-      { name: "Python", level: 85, category: "Backend" },
-      { name: "PostgreSQL", level: 88, category: "Database" },
-      { name: "MongoDB", level: 82, category: "Database" },
-      { name: "AWS", level: 85, category: "Cloud" },
-      { name: "Docker", level: 80, category: "DevOps" }
-    ],
-    soft: [
-      "Leadership & Team Management",
-      "Problem Solving & Critical Thinking",
-      "Communication & Presentation",
-      "Project Management",
-      "Agile & Scrum Methodologies",
-      "Client Relations & Consultation"
-    ]
+    name: "KARAMI GUNGRET SAMSON",
+    title: "Frontend Developer & Founder of Glitchteck Web Solutions",
+    tagline: "Crafting seamless, scalable, and accessible digital experiences.",
+    email: "glitchsamson375@gmail.com",
+    phone: "+234 904-483-796",
+    location: "Nigeria",
+    website: "",
+    linkedin: "https://linkedin.com/in/glitch-samson",
+    github: "https://github.com/glitch-samson",
+    bio: "Results-oriented Frontend Developer & Founder passionate about creating seamless, scalable, and accessible digital experiences. Skilled in building performant applications, mentoring developers, and leading projects from idea to deployment while driving business-focused results."
   },
   experience: [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "Jan 2022 - Present",
-      description: "Lead development of enterprise web applications serving 100k+ users. Architected microservices infrastructure reducing response times by 40%. Mentored junior developers and established coding standards.",
-      technologies: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"]
+      title: "Founder & Lead Frontend Engineer",
+      company: "Glitchteck Web Solutions",
+      location: "Nigeria",
+      period: "2024 – Present",
+      description: "Founded and manage a web development agency delivering modern applications. Lead client consultations, project management, and deployment pipelines. Notable projects: Tutor Match, Neyma, TicketDorm.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Vite", "CI/CD"]
     },
     {
-      title: "Full Stack Developer",
-      company: "StartupXYZ",
-      location: "Remote",
-      period: "Jun 2020 - Dec 2021",
-      description: "Built complete e-commerce platform from ground up. Implemented real-time features using WebSocket technology. Optimized database queries improving performance by 60%.",
-      technologies: ["Vue.js", "Express.js", "MongoDB", "Redis", "Stripe API"]
+      title: "Frontend Engineer",
+      company: "nHub Nigeria",
+      location: "Nigeria",
+      period: "2024 – Present",
+      description: "Train interns, review pitch presentations, and collaborate with product teams to deliver high-quality frontend solutions.",
+      technologies: ["React", "Tailwind", "GitHub", "Agile"]
     },
     {
-      title: "Frontend Developer",
-      company: "DesignStudio Inc",
-      location: "San Francisco, CA",
-      period: "Aug 2019 - May 2020",
-      description: "Developed responsive web applications with focus on UX/UI. Collaborated with design teams to implement pixel-perfect interfaces. Improved website loading speed by 50%.",
-      technologies: ["React", "SCSS", "JavaScript", "Figma", "Adobe Creative Suite"]
+      title: "Frontend Intern",
+      company: "nHub Nigeria",
+      location: "Nigeria",
+      period: "2024",
+      description: "Built production-ready apps with interns including TicketDorm and BolaCash, focusing on clean UI, accessibility, and performance.",
+      technologies: ["React", "Tailwind", "REST APIs"]
     }
   ],
   education: [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      period: "2017 - 2019",
-      gpa: "3.8/4.0",
+      degree: "B.Sc. Computer Science",
+      institution: "African University of Benin",
+      location: "Benin",
+      period: "2022 – 2025",
+      gpa: "—",
       achievements: [
-        "Thesis: 'Scalable Web Architecture Patterns'",
-        "Teaching Assistant for Web Development Course",
-        "Dean's List (4 semesters)"
+        "Soft Skills Training – African University of Benin",
+        "Active participation in developer communities"
       ]
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "UC Berkeley",
-      location: "Berkeley, CA",
-      period: "2013 - 2017",
-      gpa: "3.6/4.0",
+      degree: "Web Design & Development (Frontend)",
+      institution: "nHub Nigeria",
+      location: "Nigeria",
+      period: "—",
+      gpa: "—",
       achievements: [
-        "Summa Cum Laude",
-        "Computer Science Honor Society",
-        "Hackathon Winner (2 times)"
+        "Responsive design and accessibility best practices",
+        "Modern frontend tooling and workflows"
       ]
     }
   ],
   projects: [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured online marketplace with advanced search, real-time chat, and payment processing. Built with modern web technologies and cloud infrastructure.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
+      title: "Tutor Match",
+      description: "Tutor–student matching platform enabling seamless discovery, booking, and collaboration.",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2F2e57cf6fd0144961ac971e4739b916b4?format=webp&width=800",
+      technologies: ["React", "Tailwind", "Firebase"],
       features: [
-        "Real-time inventory management",
-        "Advanced search and filtering",
-        "Secure payment processing",
-        "Admin dashboard with analytics"
+        "Real-time tutor availability",
+        "Profile reviews and ratings",
+        "Secure booking and messaging"
       ],
-      github: "https://github.com/johndoe/ecommerce-platform",
-      demo: "https://demo-ecommerce.johndoe.dev",
+      github: "https://github.com/glitch-samson",
+      demo: "https://github.com/glitch-samson",
       status: "Completed"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, file sharing, and team communication features. Designed for remote teams and agile workflows.",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Vue.js", "Express.js", "PostgreSQL", "Socket.io"],
+      title: "Neyma",
+      description: "Modern e-commerce web app with smooth browsing and checkout experiences.",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2F387278d742f445c881d5110bedfc5314?format=webp&width=800",
+      technologies: ["Next.js", "Tailwind", "Stripe"],
       features: [
-        "Real-time collaboration",
-        "Kanban board interface",
-        "File sharing and comments",
-        "Time tracking and reporting"
+        "Product search and filtering",
+        "Cart and secure payments",
+        "Admin dashboard"
       ],
-      github: "https://github.com/johndoe/task-manager",
-      demo: "https://tasks.johndoe.dev",
-      status: "Completed"
-    },
-    {
-      title: "AI Chat Application",
-      description: "Intelligent chatbot application with natural language processing and machine learning capabilities. Integrates with multiple AI services for enhanced user experience.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Python", "OpenAI API", "FastAPI", "WebSocket"],
-      features: [
-        "Natural language processing",
-        "Context-aware responses",
-        "Multi-language support",
-        "Custom AI model training"
-      ],
-      github: "https://github.com/johndoe/ai-chat-app",
-      demo: "https://chat.johndoe.dev",
+      github: "https://github.com/glitch-samson",
+      demo: "https://github.com/glitch-samson",
       status: "In Development"
+    },
+    {
+      title: "TicketDorm",
+      description: "Digital ticketing solution for events with QR validation and analytics.",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2F7692c8cad76f4fc69c1517759e7a3e82?format=webp&width=800",
+      technologies: ["React", "Tailwind", "Node.js"],
+      features: [
+        "E-ticket generation and scanning",
+        "Sales analytics",
+        "Promoter tools"
+      ],
+      github: "https://github.com/glitch-samson",
+      demo: "https://github.com/glitch-samson",
+      status: "Completed"
+    },
+    {
+      title: "BolaCash",
+      description: "Financial services web app with wallet, transfers, and bill payments.",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2Fc6a9e0d296d543debd6505e6187913b4?format=webp&width=800",
+      technologies: ["React", "Tailwind", "REST APIs"],
+      features: [
+        "Wallet top-up and transfers",
+        "Bill payments",
+        "Transaction history"
+      ],
+      github: "https://github.com/glitch-samson",
+      demo: "https://github.com/glitch-samson",
+      status: "Completed"
     }
+  ],
+  skillsGrid: {
+    Languages: ["JavaScript", "HTML5", "CSS3"],
+    Frameworks: ["React", "Next.js", "Tailwind CSS"],
+    Tools: ["Git & GitHub", "Webpack", "CI/CD", "NPM & PNPM"]
+  },
+  softSkills: [
+    "Communication",
+    "Leadership",
+    "Teamwork",
+    "Problem-solving",
+    "Mentoring",
+    "Adaptability",
+    "Time management",
+    "Empathy",
+    "Humor under pressure"
   ]
 };

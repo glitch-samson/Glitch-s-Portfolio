@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-accent-400 to-accent-200 bg-clip-text text-transparent">
               {personal.name}
             </h3>
             <p className="text-gray-400">
-              Full Stack Developer passionate about creating exceptional digital experiences.
+              {personal.title}
             </p>
           </div>
 
@@ -45,29 +45,19 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-2">
-              <a
-                href={`mailto:${personal.email}`}
-                className="text-gray-400 hover:text-white transition-colors duration-200 block"
-              >
+              <a href={`mailto:${personal.email}`} className="text-gray-400 hover:text-white transition-colors duration-200 block">
                 {personal.email}
               </a>
-              <a
-                href={`tel:${personal.phone}`}
-                className="text-gray-400 hover:text-white transition-colors duration-200 block"
-              >
+              <a href={`tel:${personal.phone}`} className="text-gray-400 hover:text-white transition-colors duration-200 block">
                 {personal.phone}
               </a>
-              <span className="text-gray-400 block">
-                {personal.location}
-              </span>
+              <span className="text-gray-400 block">{personal.location}</span>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-gray-800 my-8"></div>
 
-        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2 text-gray-400">
             <span>© {currentYear} {personal.name}. Made with</span>
@@ -76,26 +66,13 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <a
-              href={personal.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-200"
-            >
+            <a href={personal.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
               <Github className="h-5 w-5" />
             </a>
-            <a
-              href={personal.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-200"
-            >
+            <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a
-              href={`mailto:${personal.email}`}
-              className="text-gray-400 hover:text-white transition-colors duration-200"
-            >
+            <a href={`mailto:${personal.email}`} className="text-gray-400 hover:text-white transition-colors duration-200">
               <Mail className="h-5 w-5" />
             </a>
           </div>
