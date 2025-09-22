@@ -1,4 +1,3 @@
-import { Code2 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -58,19 +57,14 @@ const About = () => {
 
           {/* Visual */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <div className="aspect-square bg-gradient-to-br from-accent-100 to-accent-200 dark:from-accent-900/30 dark:to-accent-900/20 rounded-2xl p-8 shadow-2xl">
-              <div className="w-full h-full bg-white/60 dark:bg-gray-800/50 rounded-xl backdrop-blur-sm flex items-center justify-center group">
-                <div className="text-center transform transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
-                  <div className="w-24 h-24 bg-gradient-to-br from-accent-700 to-accent-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-                    <Code2 className="h-12 w-12 text-white" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Profile Photo
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Replace with a professional headshot when available.
-                  </p>
-                </div>
+            <div className="aspect-square bg-gradient-to-br from-accent-100 to-accent-200 dark:from-accent-900/30 dark:to-accent-900/20 rounded-2xl p-2 shadow-2xl">
+              <div className="w-full h-full rounded-xl overflow-hidden relative group">
+                {personal.photo ? (
+                  <img src={personal.photo} alt={personal.name} className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1" />
+                ) : (
+                  <div className="w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-300">No photo provided</div>
+                )}
+                <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{background:"radial-gradient(600px circle at 30% 20%, rgba(255,255,255,0.2), transparent 60%)"}}></div>
               </div>
             </div>
           </motion.div>
