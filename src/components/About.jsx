@@ -1,6 +1,7 @@
 import { Code2 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const About = () => {
   const { personal } = portfolioData;
