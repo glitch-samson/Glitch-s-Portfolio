@@ -38,7 +38,7 @@ const Experience = () => {
 
                 {/* Content */}
                 <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                  <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 dark:border-gray-700">
+                  <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 dark:border-gray-700 preserve-3d" style={{ transform: 'translateZ(0)' }}>
                     <div className="flex flex-wrap items-center gap-2 mb-3">
                       <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                         <Calendar className="h-4 w-4 mr-1" />
