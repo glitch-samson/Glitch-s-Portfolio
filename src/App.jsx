@@ -18,6 +18,7 @@ function App() {
       <Experience />
       <Education />
       <Skills />
+      <SoftSkills />
       <Projects />
       <Contact />
       <Footer />
