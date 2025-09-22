@@ -89,22 +89,22 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Name *</nlabel>
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Name *</label>
                   <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-accent-600 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" placeholder="Your name" />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Email *</nlabel>
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Email *</label>
                   <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-accent-600 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" placeholder="your@email.com" />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Subject *</nlabel>
+                <label htmlFor="subject" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Subject *</label>
                 <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-accent-600 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" placeholder="Project inquiry, collaboration, etc." />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Message *</nlabel>
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 dark:text-white mb-2">Message *</label>
                 <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows="6" className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-accent-600 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 resize-none" placeholder="Tell me about your project or just say hello..."></textarea>
               </div>
 
