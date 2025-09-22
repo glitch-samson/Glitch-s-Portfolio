@@ -138,6 +138,12 @@ textarea:focus {
   @apply bg-accent-100 dark:bg-accent-900/40 text-gray-900 dark:text-accent-100;
 }
 
+/* 3D Rings */
+.ring-3d-a { border: 2px solid rgba(59,130,246,0.35); filter: blur(0.3px); animation: ringA 18s linear infinite; transform: rotateX(65deg) rotateZ(0deg) translateZ(-40px); }
+.ring-3d-b { border: 2px solid rgba(59,130,246,0.2); filter: blur(0.3px); animation: ringB 22s linear infinite; transform: rotateY(65deg) rotateZ(0deg) translateZ(-60px); }
+@keyframes ringA { from { transform: rotateX(65deg) rotateZ(0deg) translateZ(-40px);} to { transform: rotateX(65deg) rotateZ(360deg) translateZ(-40px);} }
+@keyframes ringB { from { transform: rotateY(65deg) rotateZ(0deg) translateZ(-60px);} to { transform: rotateY(65deg) rotateZ(360deg) translateZ(-60px);} }
+
 /* Ripple effect */
 .ripple-container {
   position: relative;
