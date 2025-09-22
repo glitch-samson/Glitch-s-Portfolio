@@ -20,6 +20,10 @@
 }
 
 @layer utilities {
+  .perspective-1000 { perspective: 1000px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .card-3d { transform: translateZ(20px); }
+  .shine-overlay { pointer-events: none; mix-blend-mode: screen; }
   .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
