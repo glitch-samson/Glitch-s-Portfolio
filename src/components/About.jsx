@@ -6,6 +6,18 @@ import { useEffect, useState } from 'react';
 const About = () => {
   const { personal } = portfolioData;
 
+  const quotes = [
+    "I debug with snacks – PRs get approved faster that way.",
+    "Pixel-perfect? More like pixel-patient. I’ve got time.",
+    "If it works on my machine, it works on your machine. Probably.",
+    "Making the web faster, one div at a time."
+  ];
+  const [quoteIndex, setQuoteIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setQuoteIndex((i) => (i + 1) % quotes.length), 3500);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
