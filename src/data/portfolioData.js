@@ -73,7 +73,7 @@ export const portfolioData = {
         "Secure booking and messaging"
       ],
       github: "https://github.com/glitch-samson",
-      demo: "#",
+      demo: "https://github.com/glitch-samson",
       status: "Completed"
     },
     {
@@ -87,7 +87,7 @@ export const portfolioData = {
         "Admin dashboard"
       ],
       github: "https://github.com/glitch-samson",
-      demo: "#",
+      demo: "https://github.com/glitch-samson",
       status: "In Development"
     },
     {
@@ -101,7 +101,7 @@ export const portfolioData = {
         "Promoter tools"
       ],
       github: "https://github.com/glitch-samson",
-      demo: "#",
+      demo: "https://github.com/glitch-samson",
       status: "Completed"
     },
     {
@@ -115,7 +115,7 @@ export const portfolioData = {
         "Transaction history"
       ],
       github: "https://github.com/glitch-samson",
-      demo: "#",
+      demo: "https://github.com/glitch-samson",
       status: "Completed"
     }
   ],
