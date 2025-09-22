@@ -49,7 +49,7 @@ const About = () => {
                     <Code2 className="h-12 w-12 text-white" />
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Profile Photo Placeholder
+                    Profile Photo
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400">
                     Replace with a professional headshot when available.
