@@ -9,6 +9,7 @@ export const portfolioData = {
     website: "",
     linkedin: "https://linkedin.com/in/glitch-samson",
     github: "https://github.com/glitch-samson",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2Ffaf6d5421f7c45c3bc03b00f64b7e662%2Fbc411407a15a453d8af9488bd55e6ed2?format=webp&width=800",
     bio: "Results-oriented Frontend Developer & Founder passionate about creating seamless, scalable, and accessible digital experiences. Skilled in building performant applications, mentoring developers, and leading projects from idea to deployment while driving business-focused results."
   },
   experience: [
