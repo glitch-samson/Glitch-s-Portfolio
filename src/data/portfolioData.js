@@ -4,7 +4,7 @@ export const portfolioData = {
     title: "Frontend Developer & Founder of Glitchteck Web Solutions",
     tagline: "Crafting seamless, scalable, and accessible digital experiences.",
     email: "glitchsamson375@gmail.com",
-    phone: "+234 904-483-796",
+    phone: "+234 904-483-7996",
     location: "Nigeria",
     website: "",
     linkedin: "https://linkedin.com/in/glitch-samson",
